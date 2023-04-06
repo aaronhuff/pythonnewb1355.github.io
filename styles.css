@@ -10,7 +10,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #F0ECDD;
+    background-image: url('Seal_Borderless_Monotone.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     color: #008056;
 }
 
@@ -27,6 +30,7 @@ h1 {
     text-align: center;
     border: 1px solid black;
     transition: transform 0.3s, border 0.3s;
+    background-color: white;
 }
 
 .image-link img {
@@ -37,8 +41,7 @@ h1 {
 .image-link p {
     font-family: 'Cheddar Gothic Stencil', sans-serif;
     color: #003027; 
-    font-size: 24px;
-    
+    font-size: 24px;    
     padding: 5px;
     margin-top: 10px;
     transition: border 0.3s;
