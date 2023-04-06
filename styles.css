@@ -10,7 +10,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-image: url('https://github.com/pythonnewb1355/pythonnewb1355.github.io/blob/main/Seal_Borderless_Monotone.jpg?raw=true');
+    background-image: url('/pythonnewb1355.github.io/Seal_Borderless_Monotone.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
