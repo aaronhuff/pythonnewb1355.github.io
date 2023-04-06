@@ -10,18 +10,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-image: url('/pythonnewb1355/pythonnewb1355.github.io/blob/main/Seal_Borderless_Monotone.pn');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #F0ECDD;
     color: #008056;
 }
 
 h1 {
     text-align: center;
     font-family: 'Cheddar Gothic Stencil', sans-serif;
-    font-size: 75px;
+    font-size: 64px;
     color: #003027;
 }
 
