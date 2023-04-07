@@ -47,6 +47,10 @@ h1 {
     margin-top: 10px;
     transition: border 0.3s;
 }
+/* Hides the token address */
+.image-link p1 {
+    display: none;
+}
 
 /* Style hover effect for image links */
 .image-link:hover {
