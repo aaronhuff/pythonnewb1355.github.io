@@ -53,6 +53,7 @@ h1 {
 .image-link:hover p {
     border: none;
     color: #008056;
+<<<<<<< HEAD
 }
 
 body {
@@ -62,3 +63,6 @@ body {
     background-position: center center;
 }
 
+=======
+}
+>>>>>>> af6b6c2abb32fa19dffab85327f5e2e4cb99db7c
