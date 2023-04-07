@@ -12,7 +12,6 @@ body {
     padding: 20px;
     background-color: #003027;
     color: #008056;
-    
 }
 
 h1 {
@@ -26,8 +25,7 @@ h1 {
     display: inline-block;
     margin: 10px;
     text-align: center;
-    border: 1px solid black;
-    transition: transform 0.3s, border 0.3s;
+    transition: transform 0.3s;
 }
 
 .image-link img {
@@ -39,7 +37,7 @@ h1 {
     font-family: 'Cheddar Gothic Stencil', sans-serif;
     color: #003027; 
     font-size: 24px;
-    
+    border: 1px solid black;
     padding: 5px;
     margin-top: 10px;
     transition: border 0.3s;
@@ -53,4 +51,3 @@ h1 {
     border: none;
     color: #008056;
 }
-
