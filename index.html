@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>Double Merch DAO</h1>
+    <p id="bear-counter">We're <span id="bear-count">0</span> strong and counting</p>
+
     <div class="content">
         
         <div class="image-link">
@@ -446,10 +448,16 @@
             <img src="https://arweave.net/GnLe5Y4swmtyFkjhrL1OYJpUy3QE8JhWXMBcEIF2Zug" alt="Okay Bear #8265">
             <p>Okay Bear #8265</p>
         </div>
-        
-    
-    
-          
+
     </div>
+
+    <script>
+        // Count the number of bears by counting the elements with the "image-link" class
+        const bearCount = document.getElementsByClassName("image-link").length;
+    
+        // Update the content of the "bear-count" span element with the counted number of bears
+        document.getElementById("bear-count").textContent = bearCount;
+    </script>
+    
 </body>
 </html>
