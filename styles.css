@@ -10,7 +10,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #F0ECDD;
+    background-color: #003027;
     color: #008056;
     background-image: url('Seal_Borderless_Monotone.jpg');
     
@@ -20,7 +20,7 @@ h1 {
     text-align: center;
     font-family: 'Cheddar Gothic Stencil', sans-serif;
     font-size: 64px;
-    color: #003027;
+    color: #F0ECDD;
 }
 
 .image-link {
