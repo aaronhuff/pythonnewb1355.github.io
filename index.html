@@ -12,26 +12,36 @@
     <p id="bear-counter">We're <span id="bear-count">0</span> strong and counting</p>
 
     <div class="menu">
-        <div class="link-container">
-          <a class="link-one" href="#">Home</a>
-        </div>
-        <div class="link-container">
-          <a class="link-one" href="#">About</a>
-        </div>
-        <div class="link-container logo-container"> <!-- Add this div with a new class 'logo-container' -->
-          <img src="https://raw.githubusercontent.com/pythonnewb1355/pythonnewb1355.github.io/main/Mascot_2Color.png" alt="Logo" />
-        </div>
-        <div class="link-container">
-          <a class="link-one" href="#">News</a>
-        </div>
-        <div class="link-container">
-          <a class="link-one" href="#">Merch</a>
+        <div class="menu-items">
+          <div class="link-container">
+            <a href="#">Home</a>
+          </div>
+          <div class="link-container">
+            <a href="#">About</a>
+          </div>
+          <div class="menu-mascot">
+            <img src="https://github.com/pythonnewb1355/pythonnewb1355.github.io/blob/main/Mascot_2Color.png" alt="Mascot" />
+          </div>
+          <div class="link-container">
+            <a href="#">OkayBear News</a>
+          </div>
+          <div class="link-container">
+            <a href="#">Merch</a>
+          </div>
         </div>
       </div>
 
 
+      <div class="search-wrapper">
+        <div id="search-container">
+          <input type="text" id="search-bar" placeholder="Search for your bear" oninput="searchBear()" />
+        </div>
+      </div>
+
+
+
       
-    <div class="content">
+    <div class="bear-container">
         
         <div class="image-link">
             <img src="https://arweave.net/n46dEJw_wUOkAIMaJE6UJCEzpX85R7fK4RzSkuKA3p0" alt="Okay Bear #6206">
@@ -710,7 +720,7 @@
             <p>Okay Bear #8265</p>
         </div>
         
-    
+    </div>
         
     
 
@@ -722,6 +732,38 @@
     
         // Update the content of the "bear-count" span element with the counted number of bears
         document.getElementById("bear-count").textContent = bearCount;
+
+        //bear search script
+        const searchInput = document.getElementById("search-bar");
+const imageLinks = document.querySelectorAll(".image-link");
+
+searchInput.addEventListener("input", function () {
+  let searchValue = searchInput.value.trim().toLowerCase();
+
+  if (searchValue === "") {
+    // Show all bears when search bar is cleared
+    imageLinks.forEach(function (imageLink) {
+      imageLink.style.display = "inline-block";
+    });
+  } else {
+    // Show only matched bear
+    imageLinks.forEach(function (imageLink) {
+      let bearNumber = imageLink.querySelector("p").textContent;
+      bearNumber = bearNumber.toLowerCase();
+
+      if (bearNumber.includes(searchValue)) {
+        imageLink.style.display = "inline-block";
+      } else {
+        imageLink.style.display = "none";
+      }
+    });
+  }
+});
+
+//end bear search script
+
+
+
     </script>
     
 </body>
