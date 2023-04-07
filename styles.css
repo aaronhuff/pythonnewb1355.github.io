@@ -14,7 +14,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #008056;
+    color: #06F390;
 }
 
 h1 {
@@ -28,6 +28,7 @@ h1 {
     display: inline-block;
     margin: 10px;
     text-align: center;
+    border: 1px solid black;
     transition: transform 0.3s, border 0.3s;
 }
 
